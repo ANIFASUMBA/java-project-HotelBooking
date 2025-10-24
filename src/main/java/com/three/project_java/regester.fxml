@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="590.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.three.project_java.regestercontroller">
+   <children>
+      <AnchorPane prefHeight="73.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="shieldimageview" fitHeight="42.0" fitWidth="62.0" layoutX="26.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="../../../../../../walk.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="87.0" layoutY="23.0" text="user regestration">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="64.0" layoutY="117.0" text="firstname" />
+      <TextField fx:id="firstnametextfield" layoutX="64.0" layoutY="134.0" prefHeight="27.0" prefWidth="336.0" promptText="firstname" />
+      <Label layoutX="64.0" layoutY="173.0" text="lastname" />
+      <TextField fx:id="usernametextfield" layoutX="64.0" layoutY="251.0" prefHeight="27.0" prefWidth="336.0" promptText="username" />
+      <Label layoutX="64.0" layoutY="227.0" text="username" />
+      <TextField fx:id="lastnametextfield" layoutX="64.0" layoutY="194.0" prefHeight="27.0" prefWidth="336.0" promptText="lastname" />
+      <Label layoutX="64.0" layoutY="285.0" text="password" />
+      <PasswordField fx:id="setpasswordfield" layoutX="64.0" layoutY="309.0" prefHeight="25.0" prefWidth="336.0" promptText="password" />
+      <Label layoutX="65.0" layoutY="357.0" text="confirm password" />
+      <PasswordField fx:id="ConfirmPasswordField" layoutX="64.0" layoutY="390.0" prefHeight="25.0" prefWidth="336.0" promptText="confirm your password" />
+      <Button fx:id="registerbutton" layoutX="64.0" layoutY="429.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="336.0" style="-fx-background-color: RED;" text="register" textFill="#f2ebeb">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="closebutton" layoutX="64.0" layoutY="473.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="25.0" prefWidth="336.0" style="-fx-background-color: RED;" text="cancel" textFill="#f2ebeb">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="regestrationusermessage" alignment="CENTER" layoutX="8.0" layoutY="87.0" prefHeight="19.0" prefWidth="534.0" textFill="#2688e4">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmpasswordlabel" alignment="CENTER" layoutX="172.0" layoutY="356.0" prefHeight="19.0" prefWidth="206.0" textFill="#e14121">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

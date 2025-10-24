@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.three.project_java.loginHelloController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="272.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="brandingimageview" fitHeight="250.0" fitWidth="227.0" layoutX="42.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../icon" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="food" fitHeight="102.0" fitWidth="90.0" layoutX="29.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../food.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bed" fitHeight="114.0" fitWidth="87.0" layoutX="125.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../bed.jpeg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="14.0" prefHeight="70.0" prefWidth="225.0" style="-fx-background-color: #e8e5e5;" text="HOTEL POZZILLO" textFill="#363131">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="312.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="lockimageview" fitHeight="128.0" fitWidth="127.0" layoutX="20.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../gm.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="gm" fitHeight="114.0" fitWidth="113.0" layoutX="158.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../zzz.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="21.0" layoutY="263.0" text="username">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernametextfield" layoutX="83.0" layoutY="260.0" />
+            <Label layoutX="22.0" layoutY="294.0" text="password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="enterpasswordfield" layoutX="83.0" layoutY="291.0" />
+            <Button fx:id="loginbutton" layoutX="23.0" layoutY="365.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="247.0" style="-fx-background-color: RED;" text="book hotel" textFill="#fffafa" />
+            <Button fx:id="cancelButton" layoutX="20.0" layoutY="444.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="247.0" style="-fx-background-color: RED;" text="cancel" textFill="#fffafa" />
+            <Label fx:id="loginmessagelabel" layoutX="26.0" layoutY="333.0" prefHeight="19.0" prefWidth="242.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerbutton" layoutX="20.0" layoutY="406.0" mnemonicParsing="false" onAction="#registersButtonOnAction" prefHeight="25.0" prefWidth="247.0" style="-fx-background-color: RED;" text="register" textFill="#fffafa" />
+            <Label alignment="CENTER" layoutX="22.0" layoutY="191.0" prefHeight="42.0" prefWidth="212.0" style="-fx-background-color: #da4a4a;" text="register if you do not have a login account" textFill="#363030" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
